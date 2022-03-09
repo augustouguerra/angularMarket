@@ -1,0 +1,9 @@
+
+@use '@angular/material' as mat;
+
+$my-palette: mat.$indigo-palette;
+
+nav {
+    width: 100%;
+    background-color: blue;
+}
