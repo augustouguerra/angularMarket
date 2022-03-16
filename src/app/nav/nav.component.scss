@@ -1,9 +1,24 @@
 
 @use '@angular/material' as mat;
+// @use '../../custom-theme.scss';
+@import '../../styles/colors.scss';
 
-$my-palette: mat.$indigo-palette;
 
 nav {
     width: 100%;
-    background-color: blue;
+    background-color: $accent-color;
+    color: $white;
+    display: flex;
+    justify-content: end;
+
+    padding: 5px;
+
+    &div {
+        display: block;
+        text-align: center;
+    }
+
+    .mat-icon {
+        margin-right: 10px;
+    } 
 }

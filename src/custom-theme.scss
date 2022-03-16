@@ -1,0 +1,52 @@
+@import "~@angular/material/theming";
+@include mat-core();
+
+/* ======== Angular material custom themes ======== */
+$my-custom-primary: (
+  200: #8387a7,
+  500: #070f4e,
+  800: #040835,
+  contrast: (
+    200: #000000,
+    500: #ffffff,
+    800: #ffffff,
+  ),
+);
+
+$my-custom-accent: (
+  200: #93b9ed,
+  500: #2772db,
+  800: #1755cd,
+  contrast: (
+    200: #000000,
+    500: #ffffff,
+    800: #ffffff,
+  ),
+);
+
+$my-custom-warn: (
+  200: #9dd8e4,
+  500: #3ab1c8,
+  800: #2598b4,
+  contrast: (
+    200: #000000,
+    500: #000000,
+    800: #ffffff,
+  ),
+);
+
+$my-palette-primary: mat-palette($my-custom-primary);
+$my-palette-accent: mat-palette($my-custom-accent);
+$my-palette-warn: mat-palette($my-custom-warn);
+
+$my-custom-theme: mat-light-theme(
+  (
+    color: (
+      primary: $my-palette-primary,
+      accent: $my-palette-accent,
+      warn: $my-palette-warn,
+    )
+  )
+);
+
+@include angular-material-theme($my-custom-theme);

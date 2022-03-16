@@ -1,5 +1,9 @@
 
 <nav>
-    <p>nav works!{{ count$ | async }}</p>
-    
+    <app-search-bar></app-search-bar>
+    <div>
+        <span>{{ count$ | async }}</span><mat-icon>shopping_cart</mat-icon>
+        <mat-icon>favorite_border </mat-icon>
+        <mat-icon>person </mat-icon>
+    </div>
 </nav>
